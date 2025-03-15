@@ -1,0 +1,4 @@
+node_modules/
+/tmp/app.db
+.env
+db/app.db
