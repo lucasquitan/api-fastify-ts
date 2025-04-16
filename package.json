@@ -4,6 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "build": "tsup src knexfile.ts --out-dir dist ",
+    "start": "node dist/src/server.js",
     "lint": "eslint src --ext .ts* --fix",
     "knex": "node --import tsx ./node_modules/.bin/knex",
     "test": "vitest"
@@ -19,6 +21,7 @@
     "eslint": "^8.57.1",
     "prettier": "^3.5.3",
     "supertest": "^7.0.0",
+    "tsup": "^8.4.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
     "vitest": "^3.0.8"
